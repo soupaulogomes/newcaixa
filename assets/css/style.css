@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+/* HEADER */
+
+section.header .container {
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+}
+
+section.header .container img {
+    width: fit-content;
+}
+
+/* PRODUTOS */
+
+section.compra {
+    padding: 30px 0;
+}
+
+section.compra .container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+section.compra .container .produtos{
+    background: linear-gradient(to bottom, #C9B0FF, #E3D6FF);
+    padding: 30px 70px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+section.compra .container .produtos .lanches, 
+section.compra .container .produtos .baguetes, 
+section.compra .container .produtos .espetinhos, 
+section.compra .container .produtos .bebidas {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fafafa;
+    border-radius: 20px;
+    padding: 10px 30px;
+    column-gap: 10px;
+    width: 100%;
+}
+
+section.compra .container .produtos .lanches .lanche-item, 
+section.compra .container .produtos .baguetes .baguete-item, 
+section.compra .container .produtos .espetinhos .espetinho-item, 
+section.compra .container .produtos .bebidas .bebida-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2f2f2f4f;
+    border-radius: 10px;
+}
+
+section.compra .container .produtos .lanches .lanche-item p, 
+section.compra .container .produtos .baguetes .baguete-item p, 
+section.compra .container .produtos .espetinhos .espetinho-item p, 
+section.compra .container .produtos .bebidas .bebida-item p {
+    margin: 0;
+    font-family: "Jomhuria", serif;
+    font-size: 24px;
+    color: #fff;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+/* RESUMO DO PEDIDO */
+
+section.compra .container .resumo-pedido {
+    background: linear-gradient(to bottom, #C9B0FF, #E3D6FF);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+    padding: 0 40px;
+}
+
+section.compra .container .resumo-pedido .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFDFD;
+    border-radius: 30px;
+    padding: 20px 30px;
+    row-gap: 10px;
+}
+section.compra .container .resumo-pedido .container .numero-pedido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.compra .container .resumo-pedido .container .numero-pedido p {
+    background-color: #F7F4FF;
+    color: #7D99A5;
+    font-family: "Jomhuria", serif;
+    font-size: 32px;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin: 0;
+    line-height: 32px;
+    border: 1px solid #000;
+}
+
+section.compra .container .resumo-pedido .container .cupom {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+
+section.compra .container .resumo-pedido .container .cupom .cupom-selecionado,
+section.compra .container .resumo-pedido .container .cupom .cupom-desconto {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F4FF;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    align-items: center;
+}
+
+section.compra .container .resumo-pedido .container .cupom .cupom-selecionado p, 
+section.compra .container .resumo-pedido .container .cupom .cupom-desconto p {
+    color: #7D99A5;
+    font-family: "Jomhuria", serif;
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0;
+}
+
+
+section.compra .container .resumo-pedido .container .mesa {
+    background-color: #F7F4FF;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+
+section.compra .container .resumo-pedido .container .mesa .info-mesa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.compra .container .resumo-pedido .container .mesa .info-mesa p {
+    background-color: #EBE4FF;
+    color: #7D99A5;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-family: "Jomhuria", serif;
+    font-size: 32px;
+}
+
+section.compra .container .resumo-pedido .container .banners {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+section.compra .container .resumo-pedido .container .banners img {
+    width: 100%;
+}
+
+
+/* TELA PAGAMENTO */
+
+section.compra .container .tela-pagamento {
+    background: linear-gradient(to bottom, #C9B0FF, #E3D6FF);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+    padding: 0 40px;
+}
+
+section.compra .container .tela-pagamento .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFDFD;
+    border-radius: 30px;
+    padding: 20px 30px;
+    row-gap: 10px;
+}
+section.compra .container .tela-pagamento .container .numero-pedido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.compra .container .tela-pagamento .container .numero-pedido p {
+    background-color: #F7F4FF;
+    color: #7D99A5;
+    font-family: "Jomhuria", serif;
+    font-size: 32px;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin: 0;
+    line-height: 32px;
+    border: 1px solid #000;
+}
+
+section.compra .container .tela-pagamento .container .cupom {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+
+section.compra .container .tela-pagamento .container .cupom .cupom-selecionado {
+    display: flex;
+    flex-direction: row;
+    background-color: #F7F4FF;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.compra .container .tela-pagamento .container .cupom .cupom-selecionado p {
+    color: #7D99A5;
+    font-family: "Jomhuria", serif;
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0;
+}
+
+
+section.compra .container .tela-pagamento .container .forma-pagamento {
+    background-color: #F7F4FF;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+
+section.compra .container .tela-pagamento .container .forma-pagamento .pagamento-selecionado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+section.compra .container .tela-pagamento .container .forma-pagamento .pagamento-selecionado p {
+    color: #7D99A5;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-family: "Jomhuria", serif;
+    font-size: 32px;
+    margin: 0;
+}
+
+section.compra .container .tela-pagamento .container .forma-pagamento .pagamento-selecionado .pagamento-icone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.compra .container .tela-pagamento .container .parcelamento {
+    background-color: #F7F4FF;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+
+section.compra .container .tela-pagamento .container .parcelamento .parcelas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+section.compra .container .tela-pagamento .container .parcelamento .parcelas p {
+    color: #7D99A5;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-family: "Jomhuria", serif;
+    font-size: 32px;
+    margin: 0;
+}
+
+section.compra .container .tela-pagamento .container .parcelamento .parcelas select {
+    border: 1px solid #2d2d2d;
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: #7D99A5;
+    font-family: "Jomhuria", serif;
+    font-size: 28px;
+    margin: 0;
+    line-height: 32px;
+}
+
+section.compra .container .tela-pagamento .container .desconto-aplicado {
+    background-color: #F7F4FF;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+
+section.compra .container .tela-pagamento .container .desconto-aplicado .info-desconto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+section.compra .container .tela-pagamento .container .desconto-aplicado .info-desconto p {
+    color: #7D99A5;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-family: "Jomhuria", serif;
+    font-size: 32px;
+    margin: 0;
+}
+
+section.compra .container .tela-pagamento .container .valor-final {
+    background-color: #F7F4FF;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+
+section.compra .container .tela-pagamento .container .valor-final .valor-pagar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+section.compra .container .tela-pagamento .container .valor-final .valor-pagar p {
+    color: #7D99A5;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-family: "Jomhuria", serif;
+    font-size: 32px;
+    margin: 0;
+}
+
+section.compra .container .tela-pagamento .container .troco-pagamento {
+    background-color: #F7F4FF;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+
+section.compra .container .tela-pagamento .container .troco-pagamento .troco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+section.compra .container .tela-pagamento .container .troco-pagamento .troco p {
+    color: #7D99A5;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-family: "Jomhuria", serif;
+    font-size: 32px;
+    margin: 0;
+}
+
+section.compra .container .tela-pagamento .container .finalizacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section.compra .container .tela-pagamento .container .finalizacao a {
+    text-decoration: none;
+    background-color: #38FF17;
+    padding: 3px 50px;
+    border-radius: 20px;
+    font-family: "Jomhuria", serif;
+    font-size: 45px;
+    margin: 0;
+    color: #fff;
+    position: relative;
+    line-height: 45px;
+}
+
+section.compra .container .tela-pagamento .container .finalizacao a img {
+    position: relative;
+    margin: 0 auto;
+}
+
+
+
+/* BANNER BOTTOM */
+
+section.banner-bottom {
+    padding: 30px 0;
+}
+
+section.banner-bottom .container {
+    background: linear-gradient(to bottom, #C9B0FF, #E3D6FF);
+    padding: 30px 50px;
+    border-radius: 50px
+}
+
+section.banner-bottom .container img {
+    width: 100%;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+footer hr {
+    border: 2px solid #C9B0FF;
+}
+
+footer .container .contact-info {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .container .contact-info p.title {
+    color: #7D99A5;
+}
+
+footer .container .contact-info p {
+    text-align: center;
+    margin: 0;
+    font-family: "Jomhuria", serif;
+    font-size: 32px;
+    color: #a0a0a0;
+
+}
