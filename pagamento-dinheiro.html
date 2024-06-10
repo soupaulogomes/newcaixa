@@ -16,14 +16,17 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+
     <title>Pagamento - New Caixa</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js"></script>
   </head>
   <body>
     <section class="header">
       <div class="container">
-        <img src="assets/img/logo.png" alt="Logo New Caixa">
+        <a href="index.html"><img src="assets/img/logo.png" alt="Logo New Caixa"></a>
       </div>
     </section>
     <section class="compra">
@@ -157,7 +160,19 @@
               </div>
             </div>
             <div class="finalizacao">
-              <a href="">Pagar <img src="assets/img/confirma-compra.png" alt=""></a>
+              <a href="#" id="paymentBtn">Pagar <img src="assets/img/confirma-compra.png" alt=""></a>
+            </div>
+            <div id="paymentConfirm" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="assets/img/pagamento-confirmado.png" alt="" width="50">
+                <div class="infos">
+                  <p>Pedido: 00054</p>
+                  <p>Pagamento: Aprovado <img src="assets/img/pagamento-aprovado.png" alt=""></p>
+                  <p>Pedido Realizado <img src="assets/img/pagamento-aprovado.png" alt=""></p>
+                  <p>Pedido Nº 45 <img src="assets/img/pedido-numero.png" alt=""></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

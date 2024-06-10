@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>New Caixa</title>
+    <title>Pagamento - New Caixa</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
@@ -117,89 +117,47 @@
               <p class="preco">R$ 32.90</p>
             </div>              
           </div>
-          <div class="sobremesas">
-            <div class="col-md-3 sobremesa-item">
-              <img src="assets/img/lanches/lanche01.png" alt="">
-              <p class="nome">Calabresa</p>
-              <p class="preco">R$ 32.90</p>
-            </div>
-            <div class="col-md-3 sobremesa-item">
-              <img src="assets/img/lanches/lanche01.png" alt="">
-              <p class="nome">Pernil</p>
-              <p class="preco">R$ 32.90</p>
-            </div>
-            <div class="col-md-3 sobremesa-item">
-              <img src="assets/img/lanches/lanche01.png" alt="">
-              <p class="nome">Frango</p>
-              <p class="preco">R$ 32.90</p>
-            </div>
-            <div class="col-md-3 sobremesa-item">
-              <img src="assets/img/lanches/lanche01.png" alt="">
-              <p class="nome">Dogão da Casa</p>
-              <p class="preco">R$ 32.90</p>
-            </div>              
-          </div>
         </div>
-        <div class="col-md-6 resumo-pedido">
+        <div class="col-md-6 tela-pagamento">
           <div class="container">
             <div class="numero-pedido">
               <p>00054</p>
             </div>
             <div class="cupom">
-              <div class="col-md-8 cupom-selecionado">
-                <p>Cupom:</p>
+              <div class="col-md-12 cupom-selecionado">
+                <p>Cupom</p>
                 <a href=""><img src="assets/img/cupoom-icone.png" alt=""></a>
               </div>
-              <div class="col-md-4 cupom-desconto">
-                <p>Desconto:</p>
-                <p>FUNÇAO AQUI</p>
+            </div>
+            <div class="forma-pagamento">
+              <div class="col-md-12 pagamento-selecionado">
+                <p>Forma de Pagamento</p>
+                <div class="pagamento-icone">
+                  <img src="assets/img/dinheiro-icone.png" alt="">
+                  <p>Dinheiro</p>
+                </div>
               </div>
             </div>
-            <div class="col-md-12 resumo">
-              <table>
-                <tr>
-                  <th>QTD</th>
-                  <th>Produtos</th>
-                  <th>R$</th>
-                  <th>Total</th>
-                </tr>
-                <tr>
-                  <td>1x</td>
-                  <td>Pernil</td>
-                  <td>32,80</td>
-                  <td>32,80</td>
-                </tr>
-                <tr>
-                  <td>2x</td>
-                  <td>Coca-Cola</td>
-                  <td>12,00</td>
-                  <td>24,00</td>
-                </tr>
-              </table>
-              <div class="total-final">
-                <p>Total:</p>
-                <p>R$ 45,35</p>
-                <select name="pagamento" id="pagamento">
-                  <option value="credito">Cartão de Credito</option>
-                  <option value="debito">Cartão de Debito</option>
-                  <option value="pix">Pix</option>
-                  <option value="dinheiro">Dinheiro</option>
-                </select>
-                <a href="pagamento-dinheiro.html">Pagar</a>
+            <div class="desconto-aplicado">
+              <div class="info-desconto">
+                <p>Desconto</p>
+                <p>R$ 00,00</p>
               </div>
             </div>
-            <div class="mesa">
-              <div class="info-mesa">
-                <p>N Mesa: 05</p>
-                <p>Qtd Pessoas: 03</p>
-              </div>
-              <div class="pessoas-mesa">
-
+            <div class="valor-final">
+              <div class="valor-pagar">
+                <p>Valor</p>
+                <p>R$ 44,80</p>
               </div>
             </div>
-            <div class="banners">
-              <img src="assets/img/banner-bolo.png" alt="">
-              <img src="assets/img/banner-liquida.png" alt="">
+            <div class="troco-pagamento">
+              <div class="troco">
+                <p>Troco</p>
+                <p>R$ 5,30</p>
+              </div>
+            </div>
+            <div class="finalizacao">
+              <a href="pedido-pago.html">Pagar <img src="assets/img/confirma-compra.png" alt=""></a>
             </div>
           </div>
         </div>

@@ -42,7 +42,8 @@ section.compra .container .produtos{
 section.compra .container .produtos .lanches, 
 section.compra .container .produtos .baguetes, 
 section.compra .container .produtos .espetinhos, 
-section.compra .container .produtos .bebidas {
+section.compra .container .produtos .bebidas,
+section.compra .container .produtos .sobremesas {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -58,7 +59,8 @@ section.compra .container .produtos .bebidas {
 section.compra .container .produtos .lanches .lanche-item, 
 section.compra .container .produtos .baguetes .baguete-item, 
 section.compra .container .produtos .espetinhos .espetinho-item, 
-section.compra .container .produtos .bebidas .bebida-item {
+section.compra .container .produtos .bebidas .bebida-item,
+section.compra .container .produtos .sobremesas .sobremesa-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,7 +71,8 @@ section.compra .container .produtos .bebidas .bebida-item {
 section.compra .container .produtos .lanches .lanche-item p, 
 section.compra .container .produtos .baguetes .baguete-item p, 
 section.compra .container .produtos .espetinhos .espetinho-item p, 
-section.compra .container .produtos .bebidas .bebida-item p {
+section.compra .container .produtos .bebidas .bebida-item p, 
+section.compra .container .produtos .sobremesas .sobremesa-item p {
     margin: 0;
     font-family: "Jomhuria", serif;
     font-size: 24px;
@@ -88,6 +91,7 @@ section.compra .container .resumo-pedido {
     justify-content: center;
     row-gap: 30px;
     padding: 0 40px;
+    height: 900px;
 }
 
 section.compra .container .resumo-pedido .container {
@@ -140,6 +144,80 @@ section.compra .container .resumo-pedido .container .cupom .cupom-desconto p {
     font-size: 32px;
     line-height: 32px;
     margin: 0;
+}
+
+section.compra .container .resumo-pedido .container .resumo {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F4FF;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+
+section.compra .container .resumo-pedido .container .resumo table th {
+    color: #7D99A5;
+    font-family: "Jomhuria", serif;
+    font-size: 28px;
+    line-height: 24px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    border: 1px solid #2d2d2d;
+    padding: 1px 10px;
+}
+
+section.compra .container .resumo-pedido .container .resumo table td {
+    color: #A0A0A0;
+    font-family: "Jomhuria", serif;
+    font-size: 28px;
+    line-height: 24px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    border: 1px solid #2d2d2d;
+    padding: 1px 10px;
+}
+
+section.compra .container .resumo-pedido .container .resumo .total-final {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+section.compra .container .resumo-pedido .container .resumo .total-final p {
+    color: #A0A0A0;
+    font-family: "Jomhuria", serif;
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0;
+}
+
+section.compra .container .resumo-pedido .container .resumo .total-final select {
+    border: 1px solid #2d2d2d;
+    border-radius: 10px;
+    padding: 3px 15px;
+    color: #7D99A5;
+    font-family: "Jomhuria", serif;
+    font-size: 28px;
+    margin: 0;
+    line-height: 32px;
+}
+
+section.compra .container .resumo-pedido .container .resumo .total-final a {
+    color: #fff;
+    font-family: "Jomhuria", serif;
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0;
+    background-color: #38FF17;
+    text-decoration: none;
+    padding: 3px 35px;
+    border-radius: 10px;
 }
 
 
@@ -402,6 +480,66 @@ section.compra .container .tela-pagamento .container .finalizacao a img {
     margin: 0 auto;
 }
 
+/* PEDIDO PAGO */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content p {
+    color: #7D99A5;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-family: "Jomhuria", serif;
+    font-size: 32px;
+    margin: 0;
+    line-height: 32px;
+}
+.modal-content img {
+    width: 40px;
+}
+.modal-content .infos {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+}
+.modal-content .infos img {
+    width: 32px;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 /* BANNER BOTTOM */
